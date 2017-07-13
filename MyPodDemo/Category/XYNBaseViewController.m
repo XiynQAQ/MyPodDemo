@@ -264,7 +264,6 @@
 }
 
 - (void)showEmptyDataWithYOffset:(CGFloat)YOffset showText:(NSString *)text toView:(UIView *)view RemoveBlock:(void (^)())removeBlock{
-    [self hiddenNoDataView];
     
     if (removeBlock) {
         removeBlock();
@@ -278,12 +277,12 @@
 
 - (void)showNetworkRequestFailedWithYOffset:(CGFloat)YOffset toView:(UIView *)view RemoveBlock:(void (^)())removeBlock restoreBlock:(void (^)())restoreBlock{
     
-    for (id subView in self.view.subviews) {
-            }
-    
-    if (removeBlock) {
-        removeBlock();
-    }
+//    for (id subView in self.view.subviews) {
+//            }
+//    
+//    if (removeBlock) {
+//        removeBlock();
+//    }
     
     UIView *toView = view;
     if (toView == nil) {

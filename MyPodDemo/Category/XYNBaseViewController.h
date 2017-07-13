@@ -82,8 +82,6 @@
 //加载网络请求失败的底图
 - (void)showNetworkRequestFailedWithYOffset:(CGFloat)tYOffset toView:(UIView *)view RemoveBlock:(void(^)())removeBlock restoreBlock:(void(^)())restoreBlock;
 
-- (void)hiddenNoDataView;
 
-- (void)hiddenNetworkFault;
 
 @end
