@@ -2,7 +2,7 @@
  Pod::Spec.new do |s|
 
  s.name         = "XiYNPodDemoH"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "This is my own some commonly used methods"
   s.description      = <<-DESC
                         here is description This is my own some commonly used methods
@@ -13,7 +13,7 @@
 
   s.author             = { "XiYanan" => "Xiyn_QAQ@163.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/XiynQAQ/MyPodDemo.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/XiynQAQ/MyPodDemo.git", :tag => "0.0.5" }
   s.source_files  = 'MyPodDemo/Category/**/*.{h,m}'
   s.framework  = "UIKit"
 end
