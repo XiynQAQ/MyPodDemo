@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054E4A6A1F176EEC00265C6E /* CustomBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E4A681F176EEC00265C6E /* CustomBarItem.m */; };
+		054E4A6D1F176EF800265C6E /* UINavigationItem+CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E4A6B1F176EF800265C6E /* UINavigationItem+CustomItem.m */; };
+		054E4A761F176F0600265C6E /* XYNTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E4A6E1F176F0600265C6E /* XYNTabBarButton.m */; };
+		054E4A771F176F0600265C6E /* XYNTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E4A701F176F0600265C6E /* XYNTabBar.m */; };
+		054E4A781F176F0600265C6E /* XYNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E4A721F176F0600265C6E /* XYNBaseViewController.m */; };
+		054E4A791F176F0600265C6E /* XYNBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E4A741F176F0600265C6E /* XYNBadgeButton.m */; };
 		05FDCFF21F15FE5700592FD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCFF11F15FE5700592FD1 /* main.m */; };
 		05FDCFF51F15FE5700592FD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCFF41F15FE5700592FD1 /* AppDelegate.m */; };
 		05FDCFF81F15FE5700592FD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FDCFF71F15FE5700592FD1 /* ViewController.m */; };
@@ -38,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054E4A681F176EEC00265C6E /* CustomBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBarItem.m; sourceTree = "<group>"; };
+		054E4A691F176EEC00265C6E /* CustomBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBarItem.h; sourceTree = "<group>"; };
+		054E4A6B1F176EF800265C6E /* UINavigationItem+CustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+CustomItem.m"; sourceTree = "<group>"; };
+		054E4A6C1F176EF800265C6E /* UINavigationItem+CustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+CustomItem.h"; sourceTree = "<group>"; };
+		054E4A6E1F176F0600265C6E /* XYNTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNTabBarButton.m; sourceTree = "<group>"; };
+		054E4A6F1F176F0600265C6E /* XYNTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNTabBarButton.h; sourceTree = "<group>"; };
+		054E4A701F176F0600265C6E /* XYNTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNTabBar.m; sourceTree = "<group>"; };
+		054E4A711F176F0600265C6E /* XYNTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNTabBar.h; sourceTree = "<group>"; };
+		054E4A721F176F0600265C6E /* XYNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNBaseViewController.m; sourceTree = "<group>"; };
+		054E4A731F176F0600265C6E /* XYNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNBaseViewController.h; sourceTree = "<group>"; };
+		054E4A741F176F0600265C6E /* XYNBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYNBadgeButton.m; sourceTree = "<group>"; };
+		054E4A751F176F0600265C6E /* XYNBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYNBadgeButton.h; sourceTree = "<group>"; };
 		05FDCFED1F15FE5700592FD1 /* MyPodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FDCFF11F15FE5700592FD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05FDCFF31F15FE5700592FD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +171,18 @@
 		05FDD0231F15FF1300592FD1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				054E4A6E1F176F0600265C6E /* XYNTabBarButton.m */,
+				054E4A6F1F176F0600265C6E /* XYNTabBarButton.h */,
+				054E4A701F176F0600265C6E /* XYNTabBar.m */,
+				054E4A711F176F0600265C6E /* XYNTabBar.h */,
+				054E4A721F176F0600265C6E /* XYNBaseViewController.m */,
+				054E4A731F176F0600265C6E /* XYNBaseViewController.h */,
+				054E4A741F176F0600265C6E /* XYNBadgeButton.m */,
+				054E4A751F176F0600265C6E /* XYNBadgeButton.h */,
+				054E4A6B1F176EF800265C6E /* UINavigationItem+CustomItem.m */,
+				054E4A6C1F176EF800265C6E /* UINavigationItem+CustomItem.h */,
+				054E4A681F176EEC00265C6E /* CustomBarItem.m */,
+				054E4A691F176EEC00265C6E /* CustomBarItem.h */,
 				05FDD0241F15FF2200592FD1 /* UIButton+Extension.h */,
 				05FDD0251F15FF2200592FD1 /* UIButton+Extension.m */,
 				05FDD0261F15FF2200592FD1 /* UIImage+GaussianBlurEffect.h */,
@@ -298,10 +328,16 @@
 			files = (
 				05FDD02C1F15FF2200592FD1 /* UIView+Extension.m in Sources */,
 				05FDCFF81F15FE5700592FD1 /* ViewController.m in Sources */,
+				054E4A6D1F176EF800265C6E /* UINavigationItem+CustomItem.m in Sources */,
 				05FDD02A1F15FF2200592FD1 /* UIButton+Extension.m in Sources */,
 				05FDCFF51F15FE5700592FD1 /* AppDelegate.m in Sources */,
+				054E4A791F176F0600265C6E /* XYNBadgeButton.m in Sources */,
+				054E4A781F176F0600265C6E /* XYNBaseViewController.m in Sources */,
 				05FDCFF21F15FE5700592FD1 /* main.m in Sources */,
+				054E4A6A1F176EEC00265C6E /* CustomBarItem.m in Sources */,
 				05FDD02B1F15FF2200592FD1 /* UIImage+GaussianBlurEffect.m in Sources */,
+				054E4A761F176F0600265C6E /* XYNTabBarButton.m in Sources */,
+				054E4A771F176F0600265C6E /* XYNTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
