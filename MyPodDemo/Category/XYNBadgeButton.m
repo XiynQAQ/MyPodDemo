@@ -37,11 +37,15 @@
         CGFloat badgeH = self.currentBackgroundImage.size.height;
         CGFloat badgeW = self.currentBackgroundImage.size.width;
         if (badgeValue.length > 1) {
-            // 文字的尺寸
-            NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:15]};
-            CGSize badgeSize = [badgeValue boundingRectWithSize:CGSizeMake(200, MAXFLOAT) options: NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
-            //CGSize badgeSize = [badgeValue sizeWithFont:self.titleLabel.font];
-            badgeW = badgeSize.width + 10;
+            
+            NSString *text = badgeValue;
+            CGFloat width = 0;
+            UIFont *font = self.titleLabel.font;
+            NSAttributedString *attributedText =
+            [[NSAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName: font }];
+            CGRect rect = [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+            CGSize size = rect.size;
+            badgeW = size.width + 10;
         }
         frame.size.width = badgeW;
         frame.size.height = badgeH;
