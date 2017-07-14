@@ -38,14 +38,14 @@
         CGFloat badgeW = self.currentBackgroundImage.size.width;
         if (badgeValue.length > 1) {
             
-            NSString *text = badgeValue;
-            CGFloat width = 0;
-            UIFont *font = self.titleLabel.font;
-            NSAttributedString *attributedText =
-            [[NSAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName: font }];
-            CGRect rect = [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
-            CGSize size = rect.size;
-            badgeW = size.width + 10;
+//            NSString *text = badgeValue;
+//            CGFloat width = 0;
+//            UIFont *font = self.titleLabel.font;
+//            NSAttributedString *attributedText =
+//            [[NSAttributedString alloc] initWithString:text attributes:@{NSFontAttributeName: font }];
+//            CGRect rect = [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+//            CGSize size = rect.size;
+            badgeW = 15 + 10;
         }
         frame.size.width = badgeW;
         frame.size.height = badgeH;
