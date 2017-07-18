@@ -14,6 +14,6 @@
   s.author             = { "XiYanan" => "Xiyn_QAQ@163.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/XiynQAQ/MyPodDemo.git", :tag => "0.0.5" }
-  s.source_files  = 'MyPodDemo/XYNPod/**/*.{h,m}'
+  s.source_files  = 'XYNPod/*'
   s.framework  = "UIKit"
 end
