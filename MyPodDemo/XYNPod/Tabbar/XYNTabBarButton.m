@@ -14,13 +14,13 @@
 // 按钮的选中文字颜色
 #define  ZFTabBarButtonTitleSelectedColor [UIColor blueColor]
 #import "XYNTabBarButton.h"
-//#import "XYNBadgeButton.h"
+#import "XYNBadgeButton.h"
 
 @interface XYNTabBarButton()
 /**
  *  提醒数字
  */
-//@property (nonatomic, weak) XYNBadgeButton *badgeButton;
+@property (nonatomic, weak) XYNBadgeButton *badgeButton;
 @end
 @implementation XYNTabBarButton
 
@@ -43,10 +43,10 @@
         //        }
         
         // 添加一个提醒数字按钮
-//        XYNBadgeButton *badgeButton = [[XYNBadgeButton alloc] init];
-//        badgeButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
-//        [self addSubview:badgeButton];
-//        self.badgeButton = badgeButton;
+        XYNBadgeButton *badgeButton = [[XYNBadgeButton alloc] init];
+        badgeButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
+        [self addSubview:badgeButton];
+        self.badgeButton = badgeButton;
     }
     return self;
 }
@@ -111,14 +111,14 @@
     [self setImage:self.item.selectedImage forState:UIControlStateSelected];
     
     // 设置提醒数字
-   // self.badgeButton.badgeValue = self.item.badgeValue;
+    self.badgeButton.badgeValue = self.item.badgeValue;
     
     // 设置提醒数字的位置
-//    CGFloat badgeY = 5;
-//    CGFloat badgeX = self.frame.size.width - self.badgeButton.frame.size.width - 10;
-//    CGRect badgeF = self.badgeButton.frame;
-//    badgeF.origin.x = badgeX;
-//    badgeF.origin.y = badgeY;
-//    self.badgeButton.frame = badgeF;
+    CGFloat badgeY = 5;
+    CGFloat badgeX = self.frame.size.width - self.badgeButton.frame.size.width - 10;
+    CGRect badgeF = self.badgeButton.frame;
+    badgeF.origin.x = badgeX;
+    badgeF.origin.y = badgeY;
+    self.badgeButton.frame = badgeF;
 }
 @end
